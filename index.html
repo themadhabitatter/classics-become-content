@@ -325,6 +325,12 @@
     color: var(--exit-red);
     line-height: 1;
     opacity: 0.95;
+    z-index: 0;
+  }
+  .poem-block .poem-title,
+  .poem-block .poem-body {
+    position: relative;
+    z-index: 1;
   }
   .poem-block::after {
     content: "create more content";
@@ -770,11 +776,13 @@ I don't even have a pet</div>
     .parallax-img {
       width: 100% !important;
       right: 0 !important;
+      top: 0 !important;
+      height: 100% !important;
     }
     .parallax-img img {
-      object-fit: contain !important;
-      object-position: center center !important;
-      background: #000;
+      height: 100% !important;
+      object-fit: cover !important;
+      object-position: 10% 40% !important;
     }
     .parallax-interstitial > div:last-child {
       width: 100% !important;
@@ -899,7 +907,7 @@ Not me</div>
 
     <!-- Poem center -->
     <div style="flex: 1 1 260px; background: var(--ink); color: var(--paper); padding: 3.5rem 2.5rem; position: relative; overflow: visible;">
-      <span style="position:absolute; top:1.5rem; left:50%; transform:translateX(-50%); font-family:var(--deco-font); font-size:5.5rem; color:var(--exit-red); line-height:1; opacity:0.15;">05</span>
+      <span style="position:absolute; top:1.5rem; left:50%; transform:translateX(-50%); font-family:var(--deco-font); font-size:5.5rem; color:var(--exit-red); line-height:1; opacity:0.95; z-index:0;">05</span>
       <span style="position:absolute; bottom:1rem; right:1rem; font-family:var(--address-font); font-size:0.58rem; font-weight:300; letter-spacing:0.15em; color:var(--faded); opacity:0.2; transform:scaleX(-1); white-space:nowrap; display:block;">would you prefer</span>
       <div style="font-family:var(--classic-font); font-style:italic; font-size:1.3rem; margin-bottom:2rem; color:var(--faded);">Would You Prefer?</div>
       <div style="font-family:var(--classic-font); font-size:1rem; line-height:2.1; white-space:pre-line; color:var(--paper);">Would you prefer
@@ -1083,6 +1091,50 @@ And be herded</div>
     </div>
   </div>
 </article>
+
+<!-- TORN EDGE into 08 -->
+<div class="torn-edge flip">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="fiber9" x="-2%" y="-2%" width="104%" height="104%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9 0.15" numOctaves="3" seed="71" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.5" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+    <path d="M0,80 L0,38 C16,52 27,28 40,44 C53,58 65,24 79,40 C90,54 101,30 115,46 C129,60 142,22 157,38 C168,52 179,28 193,44 C207,58 220,24 235,40 C246,54 257,32 271,48 C285,60 299,20 314,36 C325,50 336,28 350,44 C364,58 378,22 393,38 C404,52 415,30 429,46 C443,60 457,22 472,38 C483,52 494,30 508,46 C522,60 537,20 552,36 C563,50 574,28 588,44 C602,58 617,22 632,38 C643,52 654,32 668,48 C682,60 697,18 712,34 C723,48 734,28 748,44 C762,58 777,22 792,38 C803,52 814,30 828,46 C842,60 857,20 872,36 C883,50 894,28 908,44 C922,58 937,22 952,38 C963,52 974,32 988,48 C1002,60 1017,18 1032,34 C1043,48 1054,28 1068,44 C1082,58 1097,22 1112,38 C1123,52 1134,30 1148,46 C1162,60 1177,20 1192,36 C1203,50 1214,28 1228,44 C1242,58 1258,22 1273,38 C1284,52 1295,32 1309,48 C1323,60 1344,20 1368,36 C1392,50 1416,32 1440,44 L1440,80 Z"
+          fill="#f0ebe2" filter="url(#fiber9)"/>
+    <path d="M0,38 C16,52 27,28 40,44 C53,58 65,24 79,40 C90,54 101,30 115,46 C129,60 142,22 157,38 C168,52 179,28 193,44 C207,58 220,24 235,40 C246,54 257,32 271,48 C285,60 299,20 314,36 C325,50 336,28 350,44 C364,58 378,22 393,38 C404,52 415,30 429,46 C443,60 457,22 472,38 C483,52 494,30 508,46 C522,60 537,20 552,36 C563,50 574,28 588,44 C602,58 617,22 632,38 C643,52 654,32 668,48 C682,60 697,18 712,34 C723,48 734,28 748,44 C762,58 777,22 792,38 C803,52 814,30 828,46 C842,60 857,20 872,36 C883,50 894,28 908,44 C922,58 937,22 952,38 C963,52 974,32 988,48 C1002,60 1017,18 1032,34 C1043,48 1054,28 1068,44 C1082,58 1097,22 1112,38 C1123,52 1134,30 1148,46 C1162,60 1177,20 1192,36 C1203,50 1214,28 1228,44 C1242,58 1258,22 1273,38 C1284,52 1295,32 1309,48 C1323,60 1344,20 1368,36 C1392,50 1416,32 1440,44"
+          fill="none" stroke="#e8e0d4" stroke-width="3" opacity="0.7"/>
+  </svg>
+</div>
+
+<!-- ENTRY 08 -->
+<article class="entry">
+  <div class="entry-location">Fort Worth, TX &mdash; Near West 7th &mdash; 2026</div>
+  <div class="photo-block">
+    <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8521.jpeg" alt="Near West 7th, Fort Worth" />
+    <div class="photo-caption">A constant rush</div>
+  </div>
+  <div class="poem-block" data-number="08">
+    <span class="sideways-intruder">Fort Worth, Near West 7th</span>
+    <div class="poem-title">A Constant Rush</div>
+    <div class="poem-body">A constant rush
+To buy and to do
+To check those boxes
+Achieve those goals
+Attack it like a beast
+Like a boss
+And I'm no different
+
+Classics become content
+On these popped up streets that all look the same</div>
+  </div>
+</article>
+<style>
+  .poem-block[data-number="08"]::after {
+    content: "classics become content";
+  }
+</style>
 
 <footer style="border-top:1px solid #c8bfb0; padding:3rem 2rem 2rem; max-width:1100px; margin:0 auto; position:relative;">
   <!-- upside down 2026 ghost -->
