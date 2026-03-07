@@ -447,8 +447,8 @@
 
   @media (max-width: 700px) {
     .intro { grid-template-columns: 1fr; gap: 2rem; }
-    .poem-block { margin-left: 0; padding: 2.5rem 1.5rem; }
-    .poem-block::before { left: -0.5rem; font-size: 3.5rem; }
+    .poem-block { margin-left: 0; padding: 2.5rem 1.5rem 2.5rem 3rem; }
+    .poem-block::before { left: 0.5rem; font-size: 3.5rem; }
     .photo-block img, .photo-placeholder { height: 300px; }
     header::after { display: none; }
   }
@@ -772,7 +772,9 @@ I don't even have a pet</div>
       right: 0 !important;
     }
     .parallax-img img {
-      object-position: 10% 55% !important;
+      object-fit: contain !important;
+      object-position: center center !important;
+      background: #000;
     }
     .parallax-interstitial > div:last-child {
       width: 100% !important;
