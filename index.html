@@ -271,7 +271,7 @@
     object-fit: cover;
     object-position: center 40%;
     display: block;
-
+    cursor: pointer;
   }
   .photo-caption {
     position: absolute;
@@ -537,7 +537,7 @@
 <article class="entry">
   <div class="entry-location">Fort Worth, TX &mdash; Near West 7th &mdash; 2026</div>
   <div class="photo-block">
-    <img src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8675.jpeg" alt="Gentrified street, Fort Worth" />
+    <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8675.jpeg" alt="Gentrified street, Fort Worth" />
     <div class="photo-caption">Coming to a street near you</div>
   </div>
   <!-- intruder text between photo and poem -->
@@ -612,7 +612,7 @@ Just so America's Best Contacts and Eyeglasses can have more freedom to move aro
 <article class="entry entry-02">
   <div class="entry-location">Fort Worth, TX &mdash; Near West 7th &mdash; 2026</div>
   <div class="photo-block">
-    <img src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8206.jpeg" alt="Fort Worth, Near West 7th" />
+    <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8206.jpeg" alt="Fort Worth, Near West 7th" />
     <div class="photo-caption">Watch it happen in real time</div>
   </div>
   <div class="poem-block" data-number="02">
@@ -663,7 +663,7 @@ Must consume content</div>
   <div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 0; padding: 0 2rem 2rem;">
     <!-- Square image left -->
     <div style="flex: 0 0 min(50%, 520px); max-width: min(50%, 520px);">
-      <img src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8773.jpeg"
+      <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8773.jpeg"
            alt="CityVet at Night"
            style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: center center; display: block;" />
     </div>
@@ -771,6 +771,9 @@ I don't even have a pet</div>
       width: 100% !important;
       right: 0 !important;
     }
+    .parallax-img img {
+      object-position: 10% 55% !important;
+    }
     .parallax-interstitial > div:last-child {
       width: 100% !important;
       background: rgba(26,22,18,0.75) !important;
@@ -780,6 +783,42 @@ I don't even have a pet</div>
       padding: 2rem !important;
     }
   }
+
+  /* Lightbox */
+  .lightbox-img { cursor: pointer; }
+  #lightbox-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+  }
+  #lightbox-overlay.active { display: flex; }
+  #lightbox-overlay img {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+  }
+  #lightbox-close {
+    position: fixed;
+    top: 1.2rem;
+    right: 1.5rem;
+    color: #f0ebe2;
+    font-family: var(--address-font);
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: 0.7;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+  }
+  #lightbox-close:hover { opacity: 1; }
 </style>
 
 <!-- WHITE SEPARATOR -->
@@ -821,7 +860,7 @@ Not me</div>
     </div>
     <!-- Photo right -->
     <div style="flex: 0 0 min(50%, 520px); max-width: min(50%, 520px); margin-left: auto;">
-      <img src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8013.jpeg"
+      <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8013.jpeg"
            alt="Slow Walk at Sunrise, Fort Worth"
            style="width: 100%; height: 100%; min-height: 400px; object-fit: cover; object-position: center center; display: block;" />
     </div>
@@ -851,7 +890,7 @@ Not me</div>
 
     <!-- Photo left -->
     <div style="flex: 0 0 min(30%, 340px); max-width: min(30%, 340px);">
-      <img src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8386%20-%20square.jpeg"
+      <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8386%20-%20square.jpeg"
            alt="Fort Worth, Near West 7th"
            style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: center center; display: block;" />
     </div>
@@ -869,7 +908,7 @@ The harbinger of the sterile stench of hotel lobbies with their own imitation Ch
 
     <!-- Photo right -->
     <div style="flex: 0 0 min(30%, 340px); max-width: min(30%, 340px);">
-      <img src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8452.jpeg"
+      <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8452.jpeg"
            alt="Fort Worth, Near West 7th"
            style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: center center; display: block;" />
     </div>
@@ -897,7 +936,7 @@ The harbinger of the sterile stench of hotel lobbies with their own imitation Ch
 <article class="entry entry-06">
   <div class="entry-location">Fort Worth, TX &mdash; Near West 7th &mdash; 2026</div>
   <div class="photo-block">
-    <img src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8531.jpeg" alt="Small house in defiance, Fort Worth" />
+    <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8531.jpeg" alt="Small house in defiance, Fort Worth" />
     <div class="photo-caption">So this is progress</div>
   </div>
   <div class="poem-block" data-number="06">
@@ -937,12 +976,12 @@ This is development</div>
   <!-- Two images side by side -->
   <div style="display: flex; flex-wrap: wrap; gap: 0;">
     <div style="flex: 1 1 50%; min-width: 280px;">
-      <img src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8527.jpeg"
+      <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8527.jpeg"
            alt="Back alley, Fort Worth"
            style="width: 100%; height: 420px; object-fit: cover; object-position: center center; display: block;" />
     </div>
     <div style="flex: 1 1 50%; min-width: 280px;">
-      <img src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8585.jpeg"
+      <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8585.jpeg"
            alt="Back alley, Fort Worth"
            style="width: 100%; height: 420px; object-fit: cover; object-position: center center; display: block;" />
     </div>
@@ -1026,16 +1065,19 @@ Is bear witness
 And be herded</div>
     </div>
     <!-- Photos right - three stacked squares -->
-    <div style="flex: 0 0 min(50%, 520px); max-width: min(50%, 520px); margin-left: auto; display: flex; flex-direction: column;">
+    <div style="flex: 0 0 min(50%, 520px); max-width: min(50%, 520px); margin-left: auto; display: flex; flex-direction: column; gap: 0.75rem; padding-top: 0.75rem;">
       <img src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8434%20-%20square.jpeg"
            alt="Monticello, Fort Worth"
-           style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: center center; display: block;" />
+           class="lightbox-img"
+           style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: center center; display: block; cursor: pointer;" />
       <img src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8290%20-%20square.jpeg"
            alt="Monticello, Fort Worth"
-           style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: center center; display: block;" />
+           class="lightbox-img"
+           style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: center center; display: block; cursor: pointer;" />
       <img src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8293%20-%20square.jpeg"
            alt="Monticello, Fort Worth"
-           style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: center center; display: block;" />
+           class="lightbox-img"
+           style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: center center; display: block; cursor: pointer;" />
     </div>
   </div>
 </article>
@@ -1076,6 +1118,45 @@ And be herded</div>
     &copy; 2026 &mdash; All photographs and poems remain the property of the author
   </div>
 </footer>
+
+<!-- LIGHTBOX -->
+<div id="lightbox-overlay">
+  <button id="lightbox-close">close ✕</button>
+  <img id="lightbox-img-display" src="" alt="" />
+</div>
+<script>
+  (function() {
+    var overlay = document.getElementById('lightbox-overlay');
+    var display = document.getElementById('lightbox-img-display');
+    var closeBtn = document.getElementById('lightbox-close');
+
+    function openLightbox(src, alt) {
+      display.src = src;
+      display.alt = alt || '';
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+      display.src = '';
+    }
+
+    document.querySelectorAll('.lightbox-img').forEach(function(img) {
+      img.addEventListener('click', function() {
+        openLightbox(this.src, this.alt);
+      });
+    });
+
+    closeBtn.addEventListener('click', closeLightbox);
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) closeLightbox();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  })();
+</script>
 
 </body>
 </html>
