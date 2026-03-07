@@ -828,11 +828,8 @@ Not me</div>
   </div>
 </article>
 
-<!-- WHITE SPACER before 05 -->
-<div style="height: 3rem; background: var(--paper); position: relative; z-index: 2;"></div>
-
-<!-- TORN EDGE into 05 -->
-<div class="torn-edge">
+<!-- TORN EDGE into 05 - black fill to merge with entry 05 background -->
+<div class="torn-edge" style="background: var(--paper);">
   <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <filter id="fiber6" x="-2%" y="-2%" width="104%" height="104%">
@@ -900,12 +897,12 @@ The harbinger of the sterile stench of hotel lobbies with their own imitation Ch
 <article class="entry entry-06">
   <div class="entry-location">Fort Worth, TX &mdash; Near West 7th &mdash; 2026</div>
   <div class="photo-block">
-    <img src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8531.jpeg" alt="Small house in defiance, Fort Worth" />
+    <img src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8308.jpeg" alt="Small house in defiance, Fort Worth" />
     <div class="photo-caption">So this is progress</div>
   </div>
   <div class="poem-block" data-number="06">
     <span class="sideways-intruder">Fort Worth, Near West 7th</span>
-    <div class="poem-title">This Is Development:</div>
+    <div class="poem-title">This Is Development</div>
     <div class="poem-body">Gentrified neighborhoods bordered by purveyors of Porsches and Range Rovers
 The same two-toned apartment buildings with the same angles and lines
 That could be anywhere
@@ -934,6 +931,41 @@ This is development</div>
     content: "this is development";
   }
 </style>
+
+<!-- ALLEY INTERSTITIAL -->
+<div style="background: var(--ink); position: relative; z-index: 2; padding: 0 0 4rem;">
+  <!-- Two images side by side -->
+  <div style="display: flex; flex-wrap: wrap; gap: 0;">
+    <div style="flex: 1 1 50%; min-width: 280px;">
+      <img src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8527.jpeg"
+           alt="Back alley, Fort Worth"
+           style="width: 100%; height: 420px; object-fit: cover; object-position: center center; display: block;" />
+    </div>
+    <div style="flex: 1 1 50%; min-width: 280px;">
+      <img src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8585.jpeg"
+           alt="Back alley, Fort Worth"
+           style="width: 100%; height: 420px; object-fit: cover; object-position: center center; display: block;" />
+    </div>
+  </div>
+  <!-- Text below -->
+  <div style="padding: 3rem 2rem 0; max-width: 900px;">
+    <div style="
+      font-family: var(--address-font);
+      font-size: clamp(1.2rem, 3vw, 2.2rem);
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #ffffff;
+      line-height: 1.6;
+    ">I GET IT<br>
+WE ALL HAVE TO GO SOMEWHERE<br>
+AND HOUSING ISN'T GETTING ANY CHEAPER<br>
+KEEPING THE COST AS LOW AS POSSIBLE<br>
+MEANS MORE FUNDING FOR MORE HOUSING<br>
+BUT DOES IT ALL HAVE TO BE SO<br>
+<span style="color: #e8d44d;">SOULLESS?</span></div>
+  </div>
+</div>
 
 <footer style="border-top:1px solid #c8bfb0; padding:3rem 2rem 2rem; max-width:1100px; margin:0 auto; position:relative;">
   <!-- upside down 2026 ghost -->
