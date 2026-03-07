@@ -705,7 +705,7 @@ I don't even have a pet</div>
     height: 160%;
     background-image: url('https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8803.jpeg');
     background-size: cover;
-    background-position: center center;
+    background-position: 25% 75%;
     background-attachment: fixed;
     background-repeat: no-repeat;
   "></div>
@@ -714,6 +714,8 @@ I don't even have a pet</div>
     position: relative;
     z-index: 2;
     width: 50%;
+    height: 100%;
+    background: var(--ink);
     padding: 0 4rem 0 2rem;
     display: flex;
     flex-direction: column;
@@ -725,11 +727,59 @@ I don't even have a pet</div>
       font-weight: 600;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: var(--ink);
+      color: #ffffff;
       line-height: 1.1;
-    ">SURVEIL ME,<br>SAURON</div>
+    ">SURVEIL ME,<br>SAUR<span style="color: #e8d44d;">O</span>N</div>
   </div>
 </div>
+
+<!-- WHITE SEPARATOR -->
+<div style="height: 4rem; background: var(--paper); position: relative; z-index: 2;"></div>
+
+<!-- TORN EDGE into 04 -->
+<div class="torn-edge">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="fiber5" x="-2%" y="-2%" width="104%" height="104%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9 0.15" numOctaves="3" seed="31" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.5" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+    <path d="M0,80 L0,45 C14,32 25,56 38,40 C50,26 63,52 77,36 C89,22 103,50 118,34 C130,20 144,48 159,60 C173,60 185,28 199,44 C212,58 226,24 241,40 C253,54 266,30 280,46 C294,60 308,18 323,34 C335,48 348,26 363,42 C377,56 391,22 406,38 C418,52 431,28 446,44 C460,58 474,20 489,36 C501,50 514,28 529,44 C543,58 557,22 572,38 C584,52 597,30 612,46 C626,60 640,18 655,34 C667,48 680,28 695,44 C709,58 723,22 738,38 C750,52 763,32 778,48 C792,60 806,16 821,32 C833,46 846,28 861,44 C875,58 889,20 904,36 C916,50 929,30 944,46 C958,60 972,18 987,34 C999,48 1012,28 1027,44 C1041,58 1055,22 1070,38 C1082,52 1095,32 1110,48 C1124,60 1138,16 1153,32 C1165,46 1178,28 1193,44 C1207,58 1221,20 1236,36 C1248,50 1261,30 1276,46 C1290,60 1310,18 1338,34 C1362,48 1400,30 1440,42 L1440,80 Z"
+          fill="#f0ebe2" filter="url(#fiber5)"/>
+    <path d="M0,45 C14,32 25,56 38,40 C50,26 63,52 77,36 C89,22 103,50 118,34 C130,20 144,48 159,60 C173,60 185,28 199,44 C212,58 226,24 241,40 C253,54 266,30 280,46 C294,60 308,18 323,34 C335,48 348,26 363,42 C377,56 391,22 406,38 C418,52 431,28 446,44 C460,58 474,20 489,36 C501,50 514,28 529,44 C543,58 557,22 572,38 C584,52 597,30 612,46 C626,60 640,18 655,34 C667,48 680,28 695,44 C709,58 723,22 738,38 C750,52 763,32 778,48 C792,60 806,16 821,32 C833,46 846,28 861,44 C875,58 889,20 904,36 C916,50 929,30 944,46 C958,60 972,18 987,34 C999,48 1012,28 1027,44 C1041,58 1055,22 1070,38 C1082,52 1095,32 1110,48 C1124,60 1138,16 1153,32 C1165,46 1178,28 1193,44 C1207,58 1221,20 1236,36 C1248,50 1261,30 1276,46 C1290,60 1310,18 1338,34 C1362,48 1400,30 1440,42"
+          fill="none" stroke="#e8e0d4" stroke-width="3" opacity="0.7"/>
+  </svg>
+</div>
+
+<!-- ENTRY 04 -->
+<article class="entry entry-04" style="background: var(--paper); position: relative; z-index: 2;">
+  <div class="entry-location">Fort Worth, TX &mdash; Near West 7th &mdash; 2026</div>
+  <div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 0; padding: 0 2rem 2rem;">
+    <!-- Poem left -->
+    <div style="flex: 1 1 300px; background: var(--paper); color: var(--ink); padding: 3.5rem 3rem 3.5rem 2.5rem; position: relative; overflow: visible;">
+      <!-- number -->
+      <span style="position:absolute; top:1.5rem; left:-1.8rem; font-family:var(--deco-font); font-size:5.5rem; color:var(--ink); line-height:1; opacity:0.08;">04</span>
+      <!-- sideways intruder -->
+      <span style="position:absolute; left:-3.2rem; top:35%; transform:rotate(-90deg); font-family:var(--address-font); font-size:0.55rem; font-weight:300; letter-spacing:0.32em; text-transform:uppercase; color:var(--ink); opacity:0.25; white-space:nowrap;">Fort Worth, Near West 7th</span>
+      <!-- reversed text bottom -->
+      <span style="position:absolute; bottom:1rem; left:1rem; font-family:var(--address-font); font-size:0.58rem; font-weight:300; letter-spacing:0.15em; color:var(--ink); opacity:0.12; transform:scaleX(-1); white-space:nowrap; display:block;">go for a slow walk</span>
+      <div style="font-family:var(--classic-font); font-style:italic; font-size:1.3rem; margin-bottom:2rem; color:var(--ink); opacity:0.6;">Slow Walk at Sunrise (Edit)</div>
+      <div style="font-family:var(--classic-font); font-size:1rem; line-height:2.1; white-space:pre-line; color:var(--ink);">In a world where we say only individual choices change the system
+My slow steps and soggy straws
+Don't seem to be stopping those sequential strikes overseas
+The leeching leviathans leveling law
+Are the ones who need to go for a slow walk at sunrise
+Not me</div>
+    </div>
+    <!-- Photo right -->
+    <div style="flex: 0 0 min(50%, 520px); max-width: min(50%, 520px);">
+      <img src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8013.jpeg"
+           alt="Slow Walk at Sunrise, Fort Worth"
+           style="width: 100%; height: 100%; min-height: 400px; object-fit: cover; object-position: center center; display: block;" />
+    </div>
+  </div>
+</article>
 
 <footer style="border-top:1px solid #c8bfb0; padding:3rem 2rem 2rem; max-width:1100px; margin:0 auto; position:relative;">
   <!-- upside down 2026 ghost -->
