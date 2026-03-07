@@ -1159,7 +1159,7 @@ On these popped up streets that all look the same</div>
     <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8190.jpeg" alt="Near West 7th, Fort Worth" />
     <div class="photo-caption">Ecosystem modifiers</div>
   </div>
-  <div class="poem-block" data-number="09">
+  <div class="poem-block" data-number="09" style="padding-bottom: 0;">
     <span class="sideways-intruder">Fort Worth, Near West 7th</span>
     <div class="poem-title">Ecosystem Modifiers</div>
     <div class="poem-body">We are ecosystem modifiers
@@ -1169,29 +1169,118 @@ On top of old apartment cadavers
 Without thought of other occupiers
 Who may be friendly photosynthesizers
 Helping not just themselves thrive here</div>
-  </div>
-  <!-- Three images below poem in a horizontal row -->
-  <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; padding: 2rem 2rem 0;">
-    <div style="flex: 1 1 30%; min-width: 200px;">
-      <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8631.jpeg"
-           alt="Near West 7th, Fort Worth"
-           style="width: 100%; height: 260px; object-fit: cover; object-position: center center; display: block; cursor: pointer;" />
-    </div>
-    <div style="flex: 1 1 30%; min-width: 200px;">
-      <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8670.jpeg"
-           alt="Near West 7th, Fort Worth"
-           style="width: 100%; height: 260px; object-fit: cover; object-position: center center; display: block; cursor: pointer;" />
-    </div>
-    <div style="flex: 1 1 30%; min-width: 200px;">
-      <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8640.jpeg"
-           alt="Near West 7th, Fort Worth"
-           style="width: 100%; height: 260px; object-fit: cover; object-position: center center; display: block; cursor: pointer;" />
+    <!-- Three images inside black block -->
+    <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; padding: 2.5rem 0 2rem; position: relative; z-index: 1;">
+      <div style="flex: 1 1 30%; min-width: 200px;">
+        <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8631.jpeg"
+             alt="Near West 7th, Fort Worth"
+             style="width: 100%; height: 260px; object-fit: cover; object-position: center center; display: block; cursor: pointer;" />
+      </div>
+      <div style="flex: 1 1 30%; min-width: 200px;">
+        <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8670.jpeg"
+             alt="Near West 7th, Fort Worth"
+             style="width: 100%; height: 260px; object-fit: cover; object-position: center center; display: block; cursor: pointer;" />
+      </div>
+      <div style="flex: 1 1 30%; min-width: 200px;">
+        <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8640.jpeg"
+             alt="Near West 7th, Fort Worth"
+             style="width: 100%; height: 260px; object-fit: cover; object-position: center center; display: block; cursor: pointer;" />
+      </div>
     </div>
   </div>
 </article>
 <style>
   .poem-block[data-number="09"]::after {
     content: "ecosystem modifiers";
+  }
+</style>
+
+<!-- HIVE INTERSTITIAL -->
+<div style="position: relative; overflow: hidden; background: var(--ink);">
+  <!-- Background image left half -->
+  <div style="position: absolute; top: 0; left: 0; width: 50%; height: 100%;">
+    <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8454.jpeg"
+         alt="Join the hive, Fort Worth"
+         style="width: 100%; height: 100%; object-fit: cover; object-position: center center; display: block; cursor: pointer;" />
+  </div>
+  <!-- Right side text -->
+  <div style="
+    position: relative;
+    z-index: 2;
+    margin-left: 50%;
+    background: var(--ink);
+    padding: 4rem 3rem 4rem 4rem;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  ">
+    <div style="
+      font-family: var(--address-font);
+      font-size: clamp(1rem, 2.5vw, 1.8rem);
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #ffffff;
+      line-height: 1.9;
+    ">
+      LEASING OPPORTUNITIES TODAY<br>
+      STEP ON IN<br>
+      <span style="color: #e8d44d;">JOIN THE HIVE</span><br>
+      MOVE. HERE. BELONG.<br>
+      COME ON JOIN US<br>
+      JOIN US<br>
+      JOIN US
+    </div>
+  </div>
+  <!-- Mobile: stack image above text -->
+  <style>
+    @media (max-width: 768px) {
+      .hive-section { flex-direction: column !important; }
+      .hive-section .hive-img { width: 100% !important; position: relative !important; height: 300px !important; }
+      .hive-section .hive-text { margin-left: 0 !important; width: 100% !important; }
+    }
+  </style>
+</div>
+
+<!-- TORN EDGE into 10 -->
+<div class="torn-edge flip">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="fiber11" x="-2%" y="-2%" width="104%" height="104%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9 0.15" numOctaves="3" seed="97" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.5" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+    <path d="M0,80 L0,38 C16,52 27,28 40,44 C53,58 65,24 79,40 C90,54 101,30 115,46 C129,60 142,22 157,38 C168,52 179,28 193,44 C207,58 220,24 235,40 C246,54 257,32 271,48 C285,60 299,20 314,36 C325,50 336,28 350,44 C364,58 378,22 393,38 C404,52 415,30 429,46 C443,60 457,22 472,38 C483,52 494,30 508,46 C522,60 537,20 552,36 C563,50 574,28 588,44 C602,58 617,22 632,38 C643,52 654,32 668,48 C682,60 697,18 712,34 C723,48 734,28 748,44 C762,58 777,22 792,38 C803,52 814,30 828,46 C842,60 857,20 872,36 C883,50 894,28 908,44 C922,58 937,22 952,38 C963,52 974,32 988,48 C1002,60 1017,18 1032,34 C1043,48 1054,28 1068,44 C1082,58 1097,22 1112,38 C1123,52 1134,30 1148,46 C1162,60 1177,20 1192,36 C1203,50 1214,28 1228,44 C1242,58 1258,22 1273,38 C1284,52 1295,32 1309,48 C1323,60 1344,20 1368,36 C1392,50 1416,32 1440,44 L1440,80 Z"
+          fill="#f0ebe2" filter="url(#fiber11)"/>
+    <path d="M0,38 C16,52 27,28 40,44 C53,58 65,24 79,40 C90,54 101,30 115,46 C129,60 142,22 157,38 C168,52 179,28 193,44 C207,58 220,24 235,40 C246,54 257,32 271,48 C285,60 299,20 314,36 C325,50 336,28 350,44 C364,58 378,22 393,38 C404,52 415,30 429,46 C443,60 457,22 472,38 C483,52 494,30 508,46 C522,60 537,20 552,36 C563,50 574,28 588,44 C602,58 617,22 632,38 C643,52 654,32 668,48 C682,60 697,18 712,34 C723,48 734,28 748,44 C762,58 777,22 792,38 C803,52 814,30 828,46 C842,60 857,20 872,36 C883,50 894,28 908,44 C922,58 937,22 952,38 C963,52 974,32 988,48 C1002,60 1017,18 1032,34 C1043,48 1054,28 1068,44 C1082,58 1097,22 1112,38 C1123,52 1134,30 1148,46 C1162,60 1177,20 1192,36 C1203,50 1214,28 1228,44 C1242,58 1258,22 1273,38 C1284,52 1295,32 1309,48 C1323,60 1344,20 1368,36 C1392,50 1416,32 1440,44"
+          fill="none" stroke="#e8e0d4" stroke-width="3" opacity="0.7"/>
+  </svg>
+</div>
+
+<!-- ENTRY 10 -->
+<article class="entry">
+  <div class="entry-location">Fort Worth, TX &mdash; Near West 7th &mdash; 2026</div>
+  <div class="photo-block">
+    <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8701.jpeg" alt="Near West 7th, Fort Worth" />
+    <div class="photo-caption">/o (stop the circle)</div>
+  </div>
+  <div class="poem-block" data-number="10">
+    <span class="sideways-intruder">Fort Worth, Near West 7th</span>
+    <div class="poem-title">/o (Stop the Circle)</div>
+    <div class="poem-body">It's the straight line of life
+Forests make way for
+Farms make way for
+Single family homes make way for
+Condominiums make way for
+Luxury living in the heart of makes way for
+/o</div>
+  </div>
+</article>
+<style>
+  .poem-block[data-number="10"]::after {
+    content: "/o stop the circle";
   }
 </style>
 
