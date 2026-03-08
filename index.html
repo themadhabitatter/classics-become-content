@@ -487,6 +487,8 @@
     <!-- shadow layer underneath torn piece -->
     <path d="M0,80 L0,42 C12,55 20,38 31,50 C39,59 47,33 58,47 C67,58 78,28 91,44 C103,57 113,31 126,46 C139,59 149,27 163,43 C177,57 188,29 201,45 C213,58 224,30 238,48 C252,60 264,26 278,42 C290,56 302,28 316,46 C330,60 342,24 357,40 C368,54 378,28 391,44 C405,58 417,26 432,42 C445,56 456,30 469,46 C483,60 496,22 511,38 C522,52 533,28 547,44 C560,58 572,26 586,42 C600,56 612,28 626,46 C640,60 653,22 668,38 C679,52 690,30 703,46 C717,60 730,24 745,40 C756,54 767,28 781,44 C795,58 808,26 823,42 C835,56 846,32 859,48 C873,60 887,22 902,38 C913,52 924,28 937,44 C951,58 964,26 979,42 C991,56 1002,30 1015,46 C1029,60 1042,22 1057,38 C1068,52 1079,30 1092,46 C1106,60 1119,24 1134,40 C1145,54 1156,28 1169,44 C1183,58 1196,26 1211,42 C1222,56 1233,32 1246,48 C1260,60 1274,22 1289,38 C1300,52 1311,30 1324,46 C1338,60 1356,26 1375,40 C1397,52 1418,34 1440,46 L1440,80 Z" 
           fill="rgba(26,22,18,0.13)" />
+    <!-- solid black fill to prevent corner bleed-through -->
+    <rect x="0" y="0" width="1440" height="20" fill="#1a1612"/>
     <!-- black header tearing downward -->
     <path d="M0,0 L0,42 C12,55 20,38 31,50 C39,59 47,33 58,47 C67,58 78,28 91,44 C103,57 113,31 126,46 C139,59 149,27 163,43 C177,57 188,29 201,45 C213,58 224,30 238,48 C252,60 264,26 278,42 C290,56 302,28 316,46 C330,60 342,24 357,40 C368,54 378,28 391,44 C405,58 417,26 432,42 C445,56 456,30 469,46 C483,60 496,22 511,38 C522,52 533,28 547,44 C560,58 572,26 586,42 C600,56 612,28 626,46 C640,60 653,22 668,38 C679,52 690,30 703,46 C717,60 730,24 745,40 C756,54 767,28 781,44 C795,58 808,26 823,42 C835,56 846,32 859,48 C873,60 887,22 902,38 C913,52 924,28 937,44 C951,58 964,26 979,42 C991,56 1002,30 1015,46 C1029,60 1042,22 1057,38 C1068,52 1079,30 1092,46 C1106,60 1119,24 1134,40 C1145,54 1156,28 1169,44 C1183,58 1196,26 1211,42 C1222,56 1233,32 1246,48 C1260,60 1274,22 1289,38 C1300,52 1311,30 1324,46 C1338,60 1356,26 1375,40 C1397,52 1418,34 1440,46 L1440,0 Z" 
           fill="#1a1612" filter="url(#fiber)"/>
@@ -543,7 +545,7 @@
 <article class="entry">
   <div class="entry-location">Fort Worth, TX &mdash; Near West 7th &mdash; 2026</div>
   <div class="photo-block">
-    <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8675.jpeg" alt="Gentrified street, Fort Worth" />
+    <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8675.jpeg" alt="Gentrified street at dusk under storm clouds, Fort Worth" />
     <div class="photo-caption">Coming to a street near you</div>
   </div>
   <!-- intruder text between photo and poem -->
@@ -552,7 +554,6 @@
     <span style="position:absolute; top:0.5rem; right:5%; font-family:'Josefin Sans',sans-serif; font-size:0.52rem; font-weight:300; letter-spacing:0.35em; text-transform:uppercase; color:#b8362a; opacity:0.28; transform:rotate(-90deg) translateX(50%); white-space:nowrap;">resist / persist</span>
   </div>
   <div class="poem-block" data-number="01">
-    <span class="sideways-intruder">Fort Worth, Near West 7th</span>
     <div class="poem-title">This Space Intentionally Left Blank</div>
     <div class="poem-body">I am a listless and lost emissary of the wild gods whose domain seems to be eminently shrinking
 I see vast cityscapes and highways designed to accelerate systems of wealth transfer to the richest among us and to keep the wild world classified as a natural resource
@@ -604,27 +605,18 @@ Just so America's Best Contacts and Eyeglasses can have more freedom to move aro
   </svg>
 </div>
 
-<!-- more floating debris -->
-<div style="position:relative; max-width:1100px; margin:0 auto; height:0; overflow:visible; z-index:5; pointer-events:none; padding:0 2rem;">
-  <span style="position:absolute; top:-1rem; left:18%; font-family:'Playfair Display',Georgia,serif; font-size:0.9rem; font-style:italic; color:#1a1612; opacity:0.1; transform:rotate(3deg); white-space:nowrap;">as seen on</span>
-  <span style="position:absolute; top:2rem; right:22%; font-family:'Poiret One',sans-serif; font-size:1.1rem; letter-spacing:0.2em; color:#c8bfb0; opacity:0.18; transform:rotate(-1deg) scaleX(-1); white-space:nowrap;">AMENITIES</span>
-  <span style="position:absolute; top:4rem; left:33%; font-family:'Josefin Sans',sans-serif; font-size:0.48rem; font-weight:600; letter-spacing:0.5em; text-transform:uppercase; color:#b8362a; opacity:0.2; white-space:nowrap;">walkable · connected · curated</span>
-</div>
-<div class="interstitial">
-  <div class="interstitial-text">we read it the way we read everything now</div>
-  <div class="interstitial-line">&mdash; continued &mdash;</div>
-</div>
+
 
 <article class="entry entry-02">
   <div class="entry-location">Fort Worth, TX &mdash; Near West 7th &mdash; 2026</div>
   <div class="photo-block">
-    <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8206.jpeg" alt="Fort Worth, Near West 7th" />
+    <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8206.jpeg" alt="An intersection with buildings in Fort Worth, one of which is broken" />
     <div class="photo-caption">Watch it happen in real time</div>
   </div>
   <div class="poem-block" data-number="02">
     <span class="sideways-intruder">run by our desires</span>
     <div class="poem-title">Classics Become Content</div>
-    <div class="poem-body">I finished Siddhartha by Herman Hesse this week
+    <div class="poem-body">I finished Siddhartha by Hermann Hesse this week
 Reread it
 Loved it years ago
 Loved it as return
@@ -678,7 +670,6 @@ Must consume content</div>
       <!-- number -->
       <span style="position:absolute; top:1.5rem; left:-1.8rem; font-family:var(--deco-font); font-size:5.5rem; color: var(--ink); line-height:1; opacity:0.2;">03</span>
       <!-- sideways intruder -->
-      <span style="position:absolute; right:-3.2rem; top:35%; transform:rotate(90deg); font-family:var(--address-font); font-size:0.55rem; font-weight:300; letter-spacing:0.32em; text-transform:uppercase; color:var(--ink); opacity:0.3; white-space:nowrap;">Fort Worth, Near West 7th</span>
       <!-- reversed text bottom -->
       <span style="position:absolute; bottom:1rem; right:1rem; font-family:var(--address-font); font-size:0.58rem; font-weight:300; letter-spacing:0.15em; color:var(--ink); opacity:0.15; transform:scaleX(-1); white-space:nowrap; display:block;">the ads have sunk their teeth into me</span>
       <div style="font-family:var(--classic-font); font-style:italic; font-size:1.3rem; margin-bottom:2rem; color:#ffffff; opacity:0.9;">Sycophantic Ads</div>
@@ -871,7 +862,7 @@ Not me</div>
     <!-- Photo right -->
     <div style="flex: 0 0 min(50%, 520px); max-width: min(50%, 520px); margin-left: auto;">
       <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8013.jpeg"
-           alt="Slow Walk at Sunrise, Fort Worth"
+           alt="Slow walk at sunrise staring down West 7th Street"
            style="width: 100%; height: 100%; min-height: 400px; object-fit: cover; object-position: center center; display: block;" />
     </div>
   </div>
@@ -901,16 +892,16 @@ Not me</div>
     <!-- Photo left -->
     <div style="flex: 0 0 min(30%, 340px); max-width: min(30%, 340px);">
       <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8386%20-%20square.jpeg"
-           alt="Fort Worth, Near West 7th"
+           alt="Option A - peering between the curtains at a dying complex"
            style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: center center; display: block;" />
     </div>
 
     <!-- Poem center -->
     <div style="flex: 1 1 260px; background: var(--ink); color: var(--paper); padding: 3.5rem 2.5rem; position: relative; overflow: visible;">
       <span style="position:absolute; top:1.5rem; left:50%; transform:translateX(-50%); font-family:var(--deco-font); font-size:5.5rem; color:var(--exit-red); line-height:1; opacity:0.95; z-index:0;">05</span>
-      <span style="position:absolute; bottom:1rem; right:1rem; font-family:var(--address-font); font-size:0.58rem; font-weight:300; letter-spacing:0.15em; color:var(--faded); opacity:0.2; transform:scaleX(-1); white-space:nowrap; display:block;">would you prefer</span>
-      <div style="font-family:var(--classic-font); font-style:italic; font-size:1.3rem; margin-bottom:2rem; color:var(--faded);">Would You Prefer?</div>
-      <div style="font-family:var(--classic-font); font-size:1rem; line-height:2.1; white-space:pre-line; color:var(--paper);">Would you prefer
+      <span style="position:absolute; bottom:1rem; right:1rem; font-family:var(--address-font); font-size:0.58rem; font-weight:300; letter-spacing:0.15em; color:var(--faded); opacity:0.2; transform:scaleX(-1); white-space:nowrap; display:block;">which chirps are for you?</span>
+      <div style="font-family:var(--classic-font); font-style:italic; font-size:1.3rem; margin-bottom:2rem; color:var(--faded); position:relative; z-index:1;">Would You Prefer?</div>
+      <div style="font-family:var(--classic-font); font-size:1rem; line-height:2.1; white-space:pre-line; color:var(--paper); position:relative; z-index:1;">Would you prefer
 The chirps of a choir of crickets in the grass with the sound of a bubbling fountain
 Or the chirps of an abandoned smoke detector echoing out from the cadaver of a condo
 The harbinger of the sterile stench of hotel lobbies with their own imitation Chihuly</div>
@@ -919,7 +910,7 @@ The harbinger of the sterile stench of hotel lobbies with their own imitation Ch
     <!-- Photo right -->
     <div style="flex: 0 0 min(30%, 340px); max-width: min(30%, 340px);">
       <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8452.jpeg"
-           alt="Fort Worth, Near West 7th"
+           alt="Option B - a hotel lobby with its own imitation yellow Chihuly"
            style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: center center; display: block;" />
     </div>
 
@@ -946,11 +937,10 @@ The harbinger of the sterile stench of hotel lobbies with their own imitation Ch
 <article class="entry entry-06">
   <div class="entry-location">Fort Worth, TX &mdash; Near West 7th &mdash; 2026</div>
   <div class="photo-block">
-    <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8531.jpeg" alt="Small house in defiance, Fort Worth" />
+    <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8531.jpeg" alt="An empty, haggard field behind a brand new build" />
     <div class="photo-caption">So this is progress</div>
   </div>
   <div class="poem-block" data-number="06">
-    <span class="sideways-intruder">Fort Worth, Near West 7th</span>
     <div class="poem-title">This Is Development</div>
     <div class="poem-body">Gentrified neighborhoods bordered by purveyors of Porsches and Range Rovers
 The same two-toned apartment buildings with the same angles and lines
@@ -963,7 +953,6 @@ That could be anywhere
 Are
 Everywhere
 A goldendoodle
-Of course
 Stands sentry on a balcony
 Looking towards the cold of the north
 
@@ -987,12 +976,12 @@ This is development</div>
   <div style="display: flex; flex-wrap: wrap; gap: 0;">
     <div style="flex: 1 1 50%; min-width: 280px;">
       <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8527.jpeg"
-           alt="Back alley, Fort Worth"
+           alt="An alleyway between two new builds"
            style="width: 100%; height: 420px; object-fit: cover; object-position: center center; display: block;" />
     </div>
     <div style="flex: 1 1 50%; min-width: 280px;">
       <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8585.jpeg"
-           alt="Back alley, Fort Worth"
+           alt="Another alleyway between another two new builds"
            style="width: 100%; height: 420px; object-fit: cover; object-position: center center; display: block;" />
     </div>
   </div>
@@ -1060,7 +1049,6 @@ Of grass and of green
 And it's happening
 Everywhere
 But where to put all of us?
-Of course
 Mere blocks away
 Those who got lucky enough to have the true luxuries of lush lawns dotted with stately stone fountains and majestic magnolias
 Can have them
@@ -1077,15 +1065,15 @@ And be herded</div>
     <!-- Photos right - three stacked squares -->
     <div style="flex: 0 0 min(50%, 520px); max-width: min(50%, 520px); margin-left: auto; display: flex; flex-direction: column; gap: 0.75rem; padding-top: 0.75rem;">
       <img src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8434%20-%20square.jpeg"
-           alt="Monticello, Fort Worth"
+           alt="An empty lobby at night, luxury living in the heart of ——"
            class="lightbox-img"
            style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: center center; display: block; cursor: pointer;" />
       <img src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8290%20-%20square.jpeg"
-           alt="Monticello, Fort Worth"
+           alt="Majestic magnolias, friendly photosynthesizer"
            class="lightbox-img"
            style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: center center; display: block; cursor: pointer;" />
       <img src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8293%20-%20square.jpeg"
-           alt="Monticello, Fort Worth"
+           alt="The lucky ones got large mansions"
            class="lightbox-img"
            style="width: 100%; aspect-ratio: 1/1; object-fit: cover; object-position: center center; display: block; cursor: pointer;" />
     </div>
@@ -1112,11 +1100,10 @@ And be herded</div>
 <article class="entry">
   <div class="entry-location">Fort Worth, TX &mdash; Near West 7th &mdash; 2026</div>
   <div class="photo-block">
-    <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8521.jpeg" alt="Near West 7th, Fort Worth" />
-    <div class="photo-caption">A constant rush</div>
+    <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8521.jpeg" alt="Another popped up street with new builds near West 7th" />
+    <div class="photo-caption">Yet another popped up street</div>
   </div>
   <div class="poem-block" data-number="08">
-    <span class="sideways-intruder">Fort Worth, Near West 7th</span>
     <div class="poem-title">A Constant Rush</div>
     <div class="poem-body">A constant rush
 To buy and to do
@@ -1132,7 +1119,7 @@ On these popped up streets that all look the same</div>
 </article>
 <style>
   .poem-block[data-number="08"]::after {
-    content: "classics become content";
+    content: "is there ever enough content?";
   }
 </style>
 
@@ -1156,11 +1143,10 @@ On these popped up streets that all look the same</div>
 <article class="entry">
   <div class="entry-location">Fort Worth, TX &mdash; Near West 7th &mdash; 2026</div>
   <div class="photo-block">
-    <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8190.jpeg" alt="Near West 7th, Fort Worth" />
-    <div class="photo-caption">Ecosystem modifiers</div>
+    <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8190.jpeg" alt="Peering behind the curtain to the destruction of a complex" />
+    <div class="photo-caption">Should I mourn a dying complex?</div>
   </div>
   <div class="poem-block" data-number="09" style="padding-bottom: 0;">
-    <span class="sideways-intruder">Fort Worth, Near West 7th</span>
     <div class="poem-title">Ecosystem Modifiers</div>
     <div class="poem-body">We are ecosystem modifiers
 Upright beavers not aware of their powers
@@ -1173,17 +1159,17 @@ Helping not just themselves thrive here</div>
     <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; padding: 2.5rem 0 2rem; position: relative; z-index: 1;">
       <div style="flex: 1 1 30%; min-width: 200px;">
         <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8631.jpeg"
-             alt="Near West 7th, Fort Worth"
+             alt="Devouring and destruction of a complex in action"
              style="width: 100%; height: 260px; object-fit: cover; object-position: center center; display: block; cursor: pointer;" />
       </div>
       <div style="flex: 1 1 30%; min-width: 200px;">
         <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8670.jpeg"
-             alt="Near West 7th, Fort Worth"
+             alt="The doomed complex under storm clouds at dusk"
              style="width: 100%; height: 260px; object-fit: cover; object-position: center center; display: block; cursor: pointer;" />
       </div>
       <div style="flex: 1 1 30%; min-width: 200px;">
         <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8640.jpeg"
-             alt="Near West 7th, Fort Worth"
+             alt="A gated dying community"
              style="width: 100%; height: 260px; object-fit: cover; object-position: center center; display: block; cursor: pointer;" />
       </div>
     </div>
@@ -1191,7 +1177,7 @@ Helping not just themselves thrive here</div>
 </article>
 <style>
   .poem-block[data-number="09"]::after {
-    content: "ecosystem modifiers";
+    content: "you're an upright beaver and so am i";
   }
 </style>
 
@@ -1200,7 +1186,7 @@ Helping not just themselves thrive here</div>
   <!-- Background image left half -->
   <div style="position: absolute; top: 0; left: 0; width: 50%; height: 100%;">
     <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8454.jpeg"
-         alt="Join the hive, Fort Worth"
+         alt="An empty hive-mind board room"
          style="width: 100%; height: 100%; object-fit: cover; object-position: center center; display: block; cursor: pointer;" />
   </div>
   <!-- Right side text -->
@@ -1263,11 +1249,10 @@ Helping not just themselves thrive here</div>
 <article class="entry">
   <div class="entry-location">Fort Worth, TX &mdash; Near West 7th &mdash; 2026</div>
   <div class="photo-block">
-    <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8701.jpeg" alt="Near West 7th, Fort Worth" />
-    <div class="photo-caption">/o (stop the circle)</div>
+    <img class="lightbox-img" src="https://raw.githubusercontent.com/themadhabitatter/classics-become-content/main/images/DSCF8701.jpeg" alt="A winding street at night with new builds and a typical typeface on a mailbox" />
+    <div class="photo-caption">The circle continues</div>
   </div>
   <div class="poem-block" data-number="10">
-    <span class="sideways-intruder">Fort Worth, Near West 7th</span>
     <div class="poem-title">/o (Stop the Circle)</div>
     <div class="poem-body">It's the straight line of life
 Forests make way for
@@ -1280,7 +1265,7 @@ Luxury living in the heart of makes way for
 </article>
 <style>
   .poem-block[data-number="10"]::after {
-    content: "/o stop the circle";
+    content: "despite our best efforts";
   }
 </style>
 
@@ -1292,11 +1277,11 @@ Luxury living in the heart of makes way for
   <div style="margin-bottom:2.5rem;">
     <div style="font-family:'Playfair Display',Georgia,serif; font-style:italic; font-size:1.1rem; color:#1a1612; margin-bottom:0.8rem;">
       This page cost approximately
-      <span style="font-style:normal; font-weight:700; color:#b8362a;">~350–700 ml</span>
+      <span style="font-style:normal; font-weight:700; color:#b8362a;">~650–1,250 ml</span>
       of water to build.
     </div>
     <div style="font-family:'Josefin Sans',sans-serif; font-size:0.62rem; font-weight:300; letter-spacing:0.12em; color:#c8bfb0; line-height:2.2; max-width:700px; margin:0 auto;">
-      <span style="color:#1a1612; opacity:0.6;">How:</span> This page was built through roughly 20–30 AI inference exchanges with Claude Sonnet. 
+      <span style="color:#1a1612; opacity:0.6;">How:</span> This page was built across two separate AI sessions — roughly 20–30 exchanges in the first (entries 01–07, base design), and approximately 18–22 exchanges in the second (entries 08–10, hive and soulless interstitials, alt texts, mobile fixes, and cleanup). Combined: around 40–50 inference exchanges with Claude Sonnet.
       Current research estimates modern LLM inference at roughly 3–25ml of water per response 
       (cooling data center servers). That range reflects real uncertainty — efficiency varies by facility, 
       location, and model size. Training costs are excluded here; they're enormous but shared across billions 
@@ -1317,7 +1302,7 @@ Luxury living in the heart of makes way for
   </div>
 
   <div style="font-family:'Josefin Sans',sans-serif; font-size:0.58rem; font-weight:300; letter-spacing:0.24em; text-transform:uppercase; color:#c8bfb0; border-top:1px solid #e0d8cc; padding-top:1.5rem;">
-    &copy; 2026 &mdash; All photographs and poems remain the property of the author
+    &copy; 2026 &mdash; ALL PHOTOGRAPHS AND POEMS REMAIN THE PROPERTY OF ED CICHON, <a href="https://www.themadhabitatter.com/" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline; letter-spacing:inherit;">THE MAD HABITATTER</a>
   </div>
 </footer>
 
