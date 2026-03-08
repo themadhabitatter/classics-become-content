@@ -196,7 +196,8 @@
   }
 
   .intro::before {
-    content: "the bones remain";
+    content: "";
+    display: none;
     position: absolute;
     bottom: 1.5rem;
     right: 2.5rem;
@@ -218,7 +219,7 @@
     font-weight: 300;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--faded);
+    color: var(--exit-red);
     border-left: 2px solid var(--exit-red);
     padding-left: 1.2rem;
     line-height: 2.2;
@@ -469,7 +470,8 @@
     <span class="title-become">become</span>
     <span class="title-content">Content</span>
   </div>
-  <div class="project-subtitle">Photography &amp; Poetry in conflict with gentrification</div>
+  <div class="project-subtitle">Photography &amp; Poetry Questioning Modern Life and Luxury Living</div>
+  <div class="project-subtitle" style="margin-top:0.6rem;">Project by Ed Cichon, <a href="https://www.themadhabitatter.com/" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline; letter-spacing:inherit;">The Mad Habitatter</a></div>
 </header>
 
 <!-- TORN EDGE 1: bottom of header tears away -->
@@ -489,6 +491,7 @@
           fill="rgba(26,22,18,0.13)" />
     <!-- solid black fill to prevent corner bleed-through -->
     <rect x="0" y="0" width="1440" height="20" fill="#1a1612"/>
+    <rect x="1420" y="0" width="20" height="80" fill="#1a1612"/>
     <!-- black header tearing downward -->
     <path d="M0,0 L0,42 C12,55 20,38 31,50 C39,59 47,33 58,47 C67,58 78,28 91,44 C103,57 113,31 126,46 C139,59 149,27 163,43 C177,57 188,29 201,45 C213,58 224,30 238,48 C252,60 264,26 278,42 C290,56 302,28 316,46 C330,60 342,24 357,40 C368,54 378,28 391,44 C405,58 417,26 432,42 C445,56 456,30 469,46 C483,60 496,22 511,38 C522,52 533,28 547,44 C560,58 572,26 586,42 C600,56 612,28 626,46 C640,60 653,22 668,38 C679,52 690,30 703,46 C717,60 730,24 745,40 C756,54 767,28 781,44 C795,58 808,26 823,42 C835,56 846,32 859,48 C873,60 887,22 902,38 C913,52 924,28 937,44 C951,58 964,26 979,42 C991,56 1002,30 1015,46 C1029,60 1042,22 1057,38 C1068,52 1079,30 1092,46 C1106,60 1119,24 1134,40 C1145,54 1156,28 1169,44 C1183,58 1196,26 1211,42 C1222,56 1233,32 1246,48 C1260,60 1274,22 1289,38 C1300,52 1311,30 1324,46 C1338,60 1356,26 1375,40 C1397,52 1418,34 1440,46 L1440,0 Z" 
           fill="#1a1612" filter="url(#fiber)"/>
@@ -502,24 +505,29 @@
 
 <section class="intro">
   <div class="intro-text">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. The buildings went up fast. The trees stayed bare.</p>
-    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco. We read Siddhartha the way we scroll: quickly, hungrily, already reaching for the next thing before the last one has landed.</p>
-    <p>This is an ongoing document. New entries added as the city continues to digest itself.</p>
+    <p>As a digital nomad, I am implicated in the changing face of gentrifying neighborhoods across the world. In my travels, I&rsquo;ve seen the same soulless façades in city after city.</p>
+    <p>I&rsquo;ve been dropped into the middle of a Fort Worth neighborhood that seems to be developing at a rapid pace. My place is a little old and a little sad, but it&rsquo;s surrounded by fellow complexes in ruin on the fringes of gentrification.</p>
+    <p>Over the last two weeks, I&rsquo;ve tried to bear witness to what I&rsquo;ve seen with my photography and poetry. It seems there are no good and easy choices left in an era of such rapid change.</p>
+    <p>I am critical of the options before me because these options aren&rsquo;t truly what I desire. What I want is unaffordable and impossible: a small house in a cool part of town with a garden.</p>
+    <p>For now, if I can&rsquo;t accept the herding and the straight line of life and development, at least I can make art out of it.</p>
   </div>
   <div class="intro-pull">
-    Gentrification doesn&rsquo;t destroy&mdash;it digests.<br>
-    The bones remain for a while,<br>
-    rebranded,<br>
-    until they don&rsquo;t.<br><br>
-    The same thing happens<br>
-    when you read a classic<br>
-    like it&rsquo;s content.
+    <span style="font-family:var(--deco-font); font-size:2.8rem; color:var(--exit-red); opacity:1; line-height:1; display:block; margin-bottom:0.8rem;">00</span>
+    I feel the desire to belong here<br>
+    All bikes on balconies and<br>
+    Ninety degree niceties<br>
+    Modern day living in luxury<br>
+    I feel it, too<br>
+    Imagining an easy life here<br>
+    The walkability<br>
+    The squeaky clean fantasy<br>
+    Absolved of all accountability<br>
+    I desire an address to inspire
   </div>
 </section>
 
 <!-- floating disjointed text — scattered through the white space -->
 <div style="position:relative; height:0; overflow:visible; z-index:5; pointer-events:none;">
-  <span style="position:absolute; top:-2rem; left:7%; font-family:'Josefin Sans',sans-serif; font-size:0.58rem; font-weight:300; letter-spacing:0.3em; text-transform:uppercase; color:#c8bfb0; opacity:0.35; transform:rotate(-2deg); white-space:nowrap;">displaced</span>
   <span style="position:absolute; top:1rem; right:12%; font-family:'Playfair Display',Georgia,serif; font-style:italic; font-size:0.75rem; color:#b8362a; opacity:0.22; transform:rotate(1.5deg); white-space:nowrap;">consumed</span>
   <span style="position:absolute; top:3.5rem; left:42%; font-family:'Josefin Sans',sans-serif; font-size:0.5rem; font-weight:600; letter-spacing:0.4em; text-transform:uppercase; color:#c8bfb0; opacity:0.2; transform:rotate(90deg); white-space:nowrap;">lease today</span>
 </div>
